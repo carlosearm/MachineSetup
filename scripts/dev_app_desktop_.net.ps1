@@ -25,9 +25,12 @@ executeScript "devtools.ps1";
 choco install -y visualstudio2019professional
 Update-SessionEnvironment #refreshing env due to Git install
 
+#--- SDKs ---
+choco install dotnetcore-sdk
+
 #--- Workloads ---
 choco install -y visualstudio2019-workload-manageddesktop
-choco install -y visualstudio2017-workload-nativedesktop
+choco install -y visualstudio2019-workload-nativedesktop
 choco install -y visualstudio2019-workload-netcoretools
 
 #--- reenabling critial items ---

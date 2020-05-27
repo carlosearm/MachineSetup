@@ -21,7 +21,7 @@ function executeScript {
 
 #--- Setting up Windows ---
 executeScript "FileExplorerSettings.ps1";
-#executeScript "dev_app_desktop_.net.ps1";
+executeScript "dev_app_desktop_.net.ps1";
 executeScript "browsers.ps1";
 
 #choco install -y powershell-core
