@@ -19,6 +19,8 @@ function executeScript {
 	iex ((new-object net.webclient).DownloadString("$helperUri/$script"))
 }
 
+Install-WindowsUpdate -acceptEula
+
 #--- Setting up Windows ---
 executeScript "FileExplorerSettings.ps1";
 executeScript "dev_app_desktop_.net.ps1";
