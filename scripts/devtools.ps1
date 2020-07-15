@@ -4,3 +4,4 @@ choco install beyondcompare
 choco install putty
 choco install mssql2014express-defaultinstance
 choco install sql-server-management-studio
+choco install adobereader
