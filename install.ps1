@@ -30,6 +30,6 @@ executeScript "browsers.ps1";
 
 #RefreshEnv
 
-Enable-UAC
+#Enable-UAC
 Enable-MicrosoftUpdate
 #Install-WindowsUpdate -acceptEula
