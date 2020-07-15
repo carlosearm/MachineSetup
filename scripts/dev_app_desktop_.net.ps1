@@ -34,6 +34,6 @@ choco install -y visualstudio2019-workload-nativedesktop
 choco install -y visualstudio2019-workload-netcoretools
 
 #--- reenabling critial items ---
-Enable-UAC
+#Enable-UAC
 Enable-MicrosoftUpdate
 Install-WindowsUpdate -acceptEula
