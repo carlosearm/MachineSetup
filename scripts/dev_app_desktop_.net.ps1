@@ -22,16 +22,17 @@ executeScript "FileExplorerSettings.ps1";
 executeScript "devtools.ps1";
 
 #--- Tools ---
-choco install -y visualstudio2019professional
+choco install -y visualstudio2019professional --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
+#choco install -y visualstudio2019professional
 Update-SessionEnvironment #refreshing env due to Git install
 
 #--- SDKs ---
 choco install dotnetcore-sdk
 
 #--- Workloads ---
-choco install -y visualstudio2019-workload-manageddesktop
-choco install -y visualstudio2019-workload-nativedesktop
-choco install -y visualstudio2019-workload-netcoretools
+#choco install -y visualstudio2019-workload-manageddesktop
+#choco install -y visualstudio2019-workload-nativedesktop
+#choco install -y visualstudio2019-workload-netcoretools
 
 #--- reenabling critial items ---
 #Enable-UAC
