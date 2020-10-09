@@ -21,18 +21,23 @@ function executeScript {
 executeScript "FileExplorerSettings.ps1";
 executeScript "devtools.ps1";
 
+# Workaround choco / boxstarter path too long error
+# https://github.com/chocolatey/boxstarter/issues/241
+$ChocoCachePath = "$env:USERPROFILE\AppData\Local\Temp\chocolatey"
+New-Item -Path $ChocoCachePath -ItemType Directory -Force
+
 #--- Tools ---
-choco install -y visualstudio2019professional
+choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019professional
 #choco install -y visualstudio2019professional
 Update-SessionEnvironment #refreshing env due to Git install
 
 #--- SDKs ---
-choco install dotnetcore-sdk
+choco install --cacheLocation="$ChocoCachePath" dotnetcore-sdk
 
 #--- Workloads ---
-#choco install -y visualstudio2019-workload-manageddesktop
-#choco install -y visualstudio2019-workload-nativedesktop
-#choco install -y visualstudio2019-workload-netcoretools
+#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-manageddesktop
+#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-nativedesktop
+#choco install --cacheLocation="$ChocoCachePath" y visualstudio2019-workload-netcoretools
 
 #--- reenabling critial items ---
 #Enable-UAC
