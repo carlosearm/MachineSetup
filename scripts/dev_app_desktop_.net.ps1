@@ -35,9 +35,9 @@ Update-SessionEnvironment #refreshing env due to Git install
 choco install --cacheLocation="$ChocoCachePath" dotnetcore-sdk
 
 #--- Workloads ---
-#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-manageddesktop
-#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-nativedesktop
-#choco install --cacheLocation="$ChocoCachePath" y visualstudio2019-workload-netcoretools
+choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-manageddesktop
+choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-nativedesktop
+choco install --cacheLocation="$ChocoCachePath" y visualstudio2019-workload-netcoretools
 
 #--- reenabling critial items ---
 #Enable-UAC
