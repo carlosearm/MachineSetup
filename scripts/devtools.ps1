@@ -11,3 +11,4 @@ choco install --cacheLocation="$ChocoCachePath" putty
 #choco install mssqlexpress2014sp1wt -params "'/INSTANCEID=MSSQLSERVER /INSTANCENAME=MSSQLSERVER'" -y
 #choco install sql-server-management-studio
 choco install --cacheLocation="$ChocoCachePath" adobereader
+choco install --cacheLocation="$ChocoCachePath" microsoft-windows-terminal
