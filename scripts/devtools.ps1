@@ -3,6 +3,8 @@
 $ChocoCachePath = "$env:USERPROFILE\AppData\Local\Temp\chocolatey"
 New-Item -Path $ChocoCachePath -ItemType Directory -Force
 
+choco install --cacheLocation="$ChocoCachePath" -y cpu-z
+choco install --cacheLocation="$ChocoCachePath" -y coretemp
 choco install --cacheLocation="$ChocoCachePath" dotnetfx
 choco install --cacheLocation="$ChocoCachePath" -y vscode
 choco install --cacheLocation="$ChocoCachePath" -y sysinternals
