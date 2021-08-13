@@ -27,7 +27,7 @@ $ChocoCachePath = "$env:USERPROFILE\AppData\Local\Temp\chocolatey"
 New-Item -Path $ChocoCachePath -ItemType Directory -Force
 
 #--- Tools ---
-choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019professional
+choco install --cacheLocation="$ChocoCachePath" -y visualstudio2010professional
 #choco install -y visualstudio2019professional
 Update-SessionEnvironment #refreshing env due to Git install
 
@@ -36,9 +36,9 @@ choco install --cacheLocation="$ChocoCachePath" dotnetcore-sdk
 choco install --cacheLocation="$ChocoCachePath" dotnet3.5
 
 #--- Workloads ---
-choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-manageddesktop
-choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-nativedesktop
-choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-netcoretools
+#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-manageddesktop
+#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-nativedesktop
+#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-netcoretools
 
 #--- reenabling critial items ---
 #Enable-UAC
