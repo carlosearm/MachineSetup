@@ -19,6 +19,15 @@ function executeScript {
 	iex ((new-object net.webclient).DownloadString("$helperUri/$script"))
 }
 
+$path = 'HKLM:\Software\Policies\Microsoft\Windows\PowerShell'
+$key = Get-Item -LiteralPath $path -ErrorAction SilentlyContinue
+if ($key -eq $null)
+{
+    (get-item HKLM:\Software\Policies\Microsoft).OpenSubKey("Windows", $true).CreateSubKey("PowerShell")
+}
+Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell" -Name "EnableScripts" -Value 00000001 -Type DWORD
+Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell" -Name "ExecutionPolicy" -Value "Unrestricted"
+
 Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot 
 
 #--- Setting up Windows ---
