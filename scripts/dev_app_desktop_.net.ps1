@@ -34,6 +34,8 @@ Update-SessionEnvironment #refreshing env due to Git install
 #--- SDKs ---
 choco install --cacheLocation="$ChocoCachePath" dotnetcore-sdk
 choco install --cacheLocation="$ChocoCachePath" dotnet3.5
+choco install --cacheLocation="$ChocoCachePath" dotnet
+choco install --cacheLocation="$ChocoCachePath" dotnet-5.0-sdk
 
 #--- Workloads ---
 #choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-manageddesktop
