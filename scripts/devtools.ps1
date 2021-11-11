@@ -12,6 +12,6 @@ choco install --cacheLocation="$ChocoCachePath" beyondcompare
 choco install --cacheLocation="$ChocoCachePath" putty
 choco install sql-server-express -o -ia "'/IACCEPTSQLSERVERLICENSETERMS /Q /ACTION=install /INSTANCEID=MSSQLSERVER /INSTANCENAME=MSSQLSERVER /UPDATEENABLED=FALSE'" -y
 #choco install mssqlexpress2014sp1wt -params "'/INSTANCEID=MSSQLSERVER /INSTANCENAME=MSSQLSERVER'" -y
-choco install sql-server-management-studio
+#choco install sql-server-management-studio
 choco install --cacheLocation="$ChocoCachePath" adobereader
 choco install --cacheLocation="$ChocoCachePath" microsoft-windows-terminal
