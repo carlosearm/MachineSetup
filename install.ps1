@@ -43,3 +43,5 @@ executeScript "WUpdates.ps1";
 #Enable-UAC
 Enable-MicrosoftUpdate
 Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot 
+#Add Windows Credential
+executeScript "AddWindowsCredentials.ps1";
