@@ -11,11 +11,11 @@ $helperUri = $helperUri.TrimEnd("'", " ")
 $strpos = $helperUri.LastIndexOf("/")
 $helperUri = $helperUri.Substring(0, $strpos)
 $helperUri += "/scripts"
-write-host "helper script base URI is $helperUri"
+Microsoft.PowerShell.Utility\Write-Output "helper script base URI is $helperUri"
 
 function executeScript {
     Param ([string]$script)
-    write-host "executing $helperUri/$script ..."
+    Microsoft.PowerShell.Utility\Write-Output  "executing $helperUri/$script ..."
 	iex ((new-object net.webclient).DownloadString("$helperUri/$script"))
 }
 #Add Windows Credential
