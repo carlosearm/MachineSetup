@@ -27,24 +27,5 @@ if ($key -eq $null)
 }
 Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell" -Name "EnableScripts" -Value 00000001 -Type DWORD
 Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell" -Name "ExecutionPolicy" -Value "Unrestricted"
-
-Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot 
-
-#--- Setting up Windows ---
-executeScript "FileExplorerSettings.ps1";
-executeScript "dev_app_desktop_.net.ps1";
-executeScript "browsers.ps1";
-executeScript "WUpdates.ps1";
-
-#choco install -y powershell-core
-
-#RefreshEnv
-
-#Enable-UAC
-Enable-MicrosoftUpdate
-Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot 
-#Add Windows Credential
 executeScript "AddWindowsCredentials.ps1";
-#Turning .NetFramework3.5 on
 executeScript "NetFramework35.ps1";
- 
