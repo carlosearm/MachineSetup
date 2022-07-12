@@ -29,3 +29,4 @@ Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell" -N
 Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell" -Name "ExecutionPolicy" -Value "Unrestricted"
 executeScript "AddWindowsCredentials.ps1";
 executeScript "NetFramework35.ps1";
+executeScript "GroupPolicies.ps1";
