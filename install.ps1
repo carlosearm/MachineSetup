@@ -45,3 +45,6 @@ Enable-MicrosoftUpdate
 Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot 
 #Add Windows Credential
 executeScript "AddWindowsCredentials.ps1";
+#Turning .NetFramework3.5 on
+executeScript "NetFramework35.ps1";
+ 
