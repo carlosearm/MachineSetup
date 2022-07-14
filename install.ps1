@@ -44,7 +44,7 @@ executeScript "WUpdates.ps1";
 
 #Enable-UAC
 Enable-MicrosoftUpdate
-Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot 
+Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot 
 #Add Windows Credential
 executeScript "AddWindowsCredentials.ps1";
 #Turning .NetFramework3.5 on

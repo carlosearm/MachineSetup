@@ -45,5 +45,5 @@ choco install --cacheLocation="$ChocoCachePath" -y visualstudio2022-workload-nat
 
 #--- reenabling critial items ---
 #Enable-UAC
-Enable-MicrosoftUpdate
-Get-WindowsUpdate -acceptEula
+#Enable-MicrosoftUpdate
+#Get-WindowsUpdate -acceptEula
