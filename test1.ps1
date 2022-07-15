@@ -27,6 +27,6 @@ if ($key -eq $null)
 }
 Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell" -Name "EnableScripts" -Value 00000001 -Type DWORD
 Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell" -Name "ExecutionPolicy" -Value "Unrestricted"
-#executeScript "AddWindowsCredentials.ps1";
+executeScript "AddWindowsCredentials.ps1";
 #executeScript "NetFramework35.ps1";
-executeScript "GroupPolicies.ps1";
+#executeScript "GroupPolicies.ps1";
