@@ -46,7 +46,7 @@ executeScript "WUpdates.ps1";
 Enable-MicrosoftUpdate
 Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot 
 #Add Windows Credential
-executeScript "AddWindowsCredentials.ps1";
+#executeScript "AddWindowsCredentials.ps1";
 #Turning Windows features on
 executeScript "EnableWindowsFeatures.ps1";
  
