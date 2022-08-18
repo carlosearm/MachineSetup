@@ -49,4 +49,5 @@ Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
 executeScript "AddWindowsCredentials.ps1";
 #Turning Windows features on
 executeScript "EnableWindowsFeatures.ps1";
- 
+#Setting PowerOption = Ultimate Performance
+executeScript "PowerConfig.ps1";

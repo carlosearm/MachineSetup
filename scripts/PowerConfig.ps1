@@ -1,0 +1,2 @@
+$p = Get-CimInstance -Name root\cimv2\power -Class win32_PowerPlan -Filter "ElementName = 'High Performance'"  
+powercfg.exe -SETACTIVE ([string]$p.InstanceID).Replace("Microsoft:PowerPlan\{","").Replace("}","")
