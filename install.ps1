@@ -34,7 +34,7 @@ Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot
 
 #--- Setting up Windows ---
 executeScript "FileExplorerSettings.ps1";
-executeScript "dev_app_desktop_.net.ps1";
+executeScript "dev_app_desktop_.net32bits.ps1";
 executeScript "browsers.ps1";
 executeScript "WUpdates.ps1";
 
