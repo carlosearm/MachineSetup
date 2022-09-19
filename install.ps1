@@ -51,3 +51,5 @@ executeScript "AddWindowsCredentials.ps1";
 executeScript "EnableWindowsFeatures.ps1";
 #Setting PowerOption = Ultimate Performance
 executeScript "PowerConfig.ps1";
+#Turn off the default RWIN auto tuning behavior(Wago)
+executeScript "AutotuningBehavior.ps1"
