@@ -27,7 +27,7 @@ $ChocoCachePath = "$env:USERPROFILE\AppData\Local\Temp\chocolatey"
 New-Item -Path $ChocoCachePath -ItemType Directory -Force
 
 #--- Tools ---
-choco install --cacheLocation="$ChocoCachePath" -y visualstudio2022professional
+#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2022professional
 #choco install -y visualstudio2019professional
 Update-SessionEnvironment #refreshing env due to Git install
 
@@ -38,9 +38,9 @@ choco install --cacheLocation="$ChocoCachePath" dotnet
 choco install --cacheLocation="$ChocoCachePath" dotnet-5.0-sdk
 
 #--- Workloads ---
-choco install --cacheLocation="$ChocoCachePath" -y visualstudio2022-workload-manageddesktop
-choco install --cacheLocation="$ChocoCachePath" -y visualstudio2022-workload-manageddesktopbuildtools
-choco install --cacheLocation="$ChocoCachePath" -y visualstudio2022-workload-nativedesktop
+#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2022-workload-manageddesktop
+#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2022-workload-manageddesktopbuildtools
+#choco install --cacheLocation="$ChocoCachePath" -y visualstudio2022-workload-nativedesktop
 #choco install --cacheLocation="$ChocoCachePath" -y visualstudio2019-workload-netcoretools
 
 #--- reenabling critial items ---
